@@ -1,0 +1,112 @@
+name: test_simp_personal
+description: ''
+version: 0.0.1
+author: deeptanshu@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-09-04 09:00:06'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: deeptanshu@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-09-04 09:00:11'
+  .prophecy/metadata/sqlmacros/prophecy_tmp_source:
+    name: prophecy_tmp_source
+    macroType: expression
+    description: null
+    author: deeptanshu@prophecy.io
+    files:
+    - macros/prophecy_tmp_source.sql
+    createdAt: '2025-09-04 09:01:26'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/deeptanshu_default:
+    name: deeptanshu.default
+    description: null
+    author: deeptanshu@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-09-04 09:03:31'
+    tables:
+    - name: t1
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: customer_id
+          dataType:
+            type: Bigint
+        - name: name
+          dataType:
+            type: String
+        - name: email
+          dataType:
+            type: String
+        - name: city
+          dataType:
+            type: String
+        - name: status
+          dataType:
+            type: String
+        - name: valid_from
+          dataType:
+            type: Date
+        - name: valid_to
+          dataType:
+            type: Date
+        - name: is_current
+          dataType:
+            type: Boolean
+      description: null
+      author: deeptanshu@prophecy.io
+      createdAt: '2025-09-04 09:03:31'
+      tableType: table
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: deeptanshu@prophecy.io
+  createdAt: '2025-09-04 09:00:06'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
+projectConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/pp002:
+    name: pp002
+    schema: null
+    description: null
+    author: deeptanshu@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/pp002.json
+    - pipelines/pp002.py
+    createdAt: '2025-09-04 09:01:26'
+sqlBusinessApps: {}

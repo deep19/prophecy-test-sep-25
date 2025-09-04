@@ -1,0 +1,34 @@
+---
+version: 2
+sources:
+- name: "deeptanshu.default"
+  database: "deeptanshu"
+  schema: "default"
+  tables:
+  - name: "t1"
+    columns:
+    - name: "customer_id"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      dataType:
+        type: "String"
+    - name: "email"
+      dataType:
+        type: "String"
+    - name: "city"
+      dataType:
+        type: "String"
+    - name: "status"
+      dataType:
+        type: "String"
+    - name: "valid_from"
+      dataType:
+        type: "Date"
+    - name: "valid_to"
+      dataType:
+        type: "Date"
+    - name: "is_current"
+      dataType:
+        type: "Boolean"
+    type: "table"
