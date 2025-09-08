@@ -20,3 +20,8 @@ with DAG(Config = Config, Schedule = Schedule, SensorSchedule = SensorSchedule):
         component = "Dataset", 
         table = {"name" : "s1", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
     )
+    s2 = Task(
+        task_id = "s2", 
+        component = "Dataset", 
+        table = {"name" : "s2", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
+    )

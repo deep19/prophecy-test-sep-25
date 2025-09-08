@@ -104,6 +104,40 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH" : {
+      "id" : "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "s2",
+        "x" : -1580,
+        "y" : -1080,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "s2",
+          "sourceType" : "Source",
+          "sourceName" : "deeptanshu.default",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "DHYa_4Jn2fnjRxL5H8SmV$$1C7LJS9oL-oVdtgfsZVBd",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "WF13KFjRJ7j1u68iXdDAA$$IOrUFm5-kjrhqU4FCp2ef",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

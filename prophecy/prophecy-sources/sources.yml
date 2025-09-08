@@ -44,6 +44,9 @@ sources:
   - name: "s1"
     columns: []
     type: "table"
+  - name: "s2"
+    columns: []
+    type: "table"
 - name: "main.default"
   database: "main"
   schema: "default"
