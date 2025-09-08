@@ -15,3 +15,8 @@ with DAG(Config = Config, Schedule = Schedule, SensorSchedule = SensorSchedule):
         }, 
         writeOptions = {"writeMode" : "overwrite"}
     )
+    s1 = Task(
+        task_id = "s1", 
+        component = "Dataset", 
+        table = {"name" : "s1", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
+    )

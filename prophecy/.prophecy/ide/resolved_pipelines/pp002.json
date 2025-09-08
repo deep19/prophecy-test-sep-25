@@ -70,6 +70,35 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly" : {
+      "id" : "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "s1",
+        "x" : -1240,
+        "y" : -940,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "s1",
+          "sourceType" : "Source",
+          "sourceName" : "deeptanshu.default",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Kz9Es3TGzhgEyXfTYPHYb$$vzWurdvmkQacE0oqTyAt6",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "4OPQH6vqVRP51Lk8RkOIx$$s9en44llrPv7hNUWCT3je",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

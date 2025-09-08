@@ -115,6 +115,15 @@ sqlSources:
       author: deeptanshu@prophecy.io
       createdAt: '2025-09-04 12:12:25'
       tableType: table
+    - name: s1
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: deeptanshu@prophecy.io
+      createdAt: '2025-09-08 08:22:18'
+      tableType: table
   .prophecy/metadata/sqlsources/main_default:
     name: main.default
     description: null

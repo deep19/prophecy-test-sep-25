@@ -41,6 +41,9 @@ sources:
   - name: "{{var('abc')}}"
     columns: []
     type: "table"
+  - name: "s1"
+    columns: []
+    type: "table"
 - name: "main.default"
   database: "main"
   schema: "default"
