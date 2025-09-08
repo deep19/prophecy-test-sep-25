@@ -71,74 +71,6 @@
         "isCustomOutputSchema" : false
       }
     },
-    "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly" : {
-      "id" : "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly",
-      "component" : "Dataset",
-      "metadata" : {
-        "label" : "s1",
-        "x" : -1240,
-        "y" : -940,
-        "phase" : 0
-      },
-      "properties" : {
-        "table" : {
-          "name" : "s1",
-          "sourceType" : "Source",
-          "sourceName" : "deeptanshu.default",
-          "alias" : ""
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Kz9Es3TGzhgEyXfTYPHYb$$vzWurdvmkQacE0oqTyAt6",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "4OPQH6vqVRP51Lk8RkOIx$$s9en44llrPv7hNUWCT3je",
-          "schema" : {
-            "entityType" : "",
-            "providerType" : "databricks",
-            "fields" : [ ]
-          },
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false
-      }
-    },
-    "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH" : {
-      "id" : "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH",
-      "component" : "Dataset",
-      "metadata" : {
-        "label" : "s2",
-        "x" : -1580,
-        "y" : -1080,
-        "phase" : 0
-      },
-      "properties" : {
-        "table" : {
-          "name" : "s2",
-          "sourceType" : "Source",
-          "sourceName" : "deeptanshu.default",
-          "alias" : ""
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "DHYa_4Jn2fnjRxL5H8SmV$$1C7LJS9oL-oVdtgfsZVBd",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "WF13KFjRJ7j1u68iXdDAA$$IOrUFm5-kjrhqU4FCp2ef",
-          "schema" : {
-            "entityType" : "",
-            "providerType" : "databricks",
-            "fields" : [ ]
-          },
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false
-      }
-    },
     "FuGanDpJ4-i8ay02043LC$$WfhrVnxVet0DPFD6BJ2sj" : {
       "id" : "FuGanDpJ4-i8ay02043LC$$WfhrVnxVet0DPFD6BJ2sj",
       "component" : "Dataset",
@@ -209,6 +141,110 @@
                 "type" : "Boolean"
               }
             } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly" : {
+      "id" : "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "s1",
+        "x" : -1240,
+        "y" : -940,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "s1",
+          "sourceType" : "Source",
+          "sourceName" : "deeptanshu.default",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Kz9Es3TGzhgEyXfTYPHYb$$vzWurdvmkQacE0oqTyAt6",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "4OPQH6vqVRP51Lk8RkOIx$$s9en44llrPv7hNUWCT3je",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "YlKPIrgnywWcsJ1zQXmjo$$1N_VLisonbysttOFrtpol" : {
+      "id" : "YlKPIrgnywWcsJ1zQXmjo$$1N_VLisonbysttOFrtpol",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "s1_1",
+        "x" : -1300,
+        "y" : -1080,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "s1",
+          "sourceName" : "deeptanshu.default",
+          "sourceType" : "Table"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "x5pek2jS7OqAvhAvq-v04$$xVauei8PTLkXGE5GLSn9d",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "GCViBBzkVYtz3RwTJjUVB$$AhBNHSdVmRheuAJ4A8NJe",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH" : {
+      "id" : "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "s2",
+        "x" : -1580,
+        "y" : -1080,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "s2",
+          "sourceType" : "Source",
+          "sourceName" : "deeptanshu.default",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "DHYa_4Jn2fnjRxL5H8SmV$$1C7LJS9oL-oVdtgfsZVBd",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "WF13KFjRJ7j1u68iXdDAA$$IOrUFm5-kjrhqU4FCp2ef",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ ]
           },
           "slug" : "out"
         } ],

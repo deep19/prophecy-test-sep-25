@@ -71,6 +71,82 @@
         "isCustomOutputSchema" : false
       }
     },
+    "FuGanDpJ4-i8ay02043LC$$WfhrVnxVet0DPFD6BJ2sj" : {
+      "id" : "FuGanDpJ4-i8ay02043LC$$WfhrVnxVet0DPFD6BJ2sj",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "t1",
+        "x" : -1440,
+        "y" : -1080,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "t1",
+          "sourceName" : "deeptanshu.default",
+          "sourceType" : "Table"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xDX3OmE2fxUzabI6rN57b$$vs8tWPIuNyZkxgV7BEatf",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "vwLssbP5A9gQLuTW6YlMi$$vBO1Roh7uMdCqVjD7mtwC",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "valid_from",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "valid_to",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "is_current",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly" : {
       "id" : "Ti824ze2MQsB1zJaja7EV$$4WuxIN1NRC_ZRn8ABGuly",
       "component" : "Dataset",
@@ -105,6 +181,37 @@
         "isCustomOutputSchema" : false
       }
     },
+    "YlKPIrgnywWcsJ1zQXmjo$$1N_VLisonbysttOFrtpol" : {
+      "id" : "YlKPIrgnywWcsJ1zQXmjo$$1N_VLisonbysttOFrtpol",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "s1_1",
+        "x" : -1300,
+        "y" : -1080,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "s1",
+          "sourceName" : "deeptanshu.default",
+          "sourceType" : "Table"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "x5pek2jS7OqAvhAvq-v04$$xVauei8PTLkXGE5GLSn9d",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "GCViBBzkVYtz3RwTJjUVB$$AhBNHSdVmRheuAJ4A8NJe",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH" : {
       "id" : "qX_tvAvMyIjfNNHidhpXS$$GfdF6hpDenmMCk9ueLFmH",
       "component" : "Dataset",
@@ -134,37 +241,6 @@
             "providerType" : "databricks",
             "fields" : [ ]
           },
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false
-      }
-    },
-    "FuGanDpJ4-i8ay02043LC$$WfhrVnxVet0DPFD6BJ2sj" : {
-      "id" : "FuGanDpJ4-i8ay02043LC$$WfhrVnxVet0DPFD6BJ2sj",
-      "component" : "Dataset",
-      "metadata" : {
-        "label" : "t1",
-        "x" : -1440,
-        "y" : -1080,
-        "phase" : 0
-      },
-      "properties" : {
-        "writeOptions" : {
-          "writeMode" : "overwrite"
-        },
-        "table" : {
-          "name" : "t1",
-          "sourceName" : "deeptanshu.default",
-          "sourceType" : "Table"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "xDX3OmE2fxUzabI6rN57b$$vs8tWPIuNyZkxgV7BEatf",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "vwLssbP5A9gQLuTW6YlMi$$vBO1Roh7uMdCqVjD7mtwC",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false

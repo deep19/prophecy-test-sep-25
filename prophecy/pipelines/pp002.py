@@ -15,19 +15,25 @@ with DAG(Config = Config, Schedule = Schedule, SensorSchedule = SensorSchedule):
         }, 
         writeOptions = {"writeMode" : "overwrite"}
     )
-    s1 = Task(
-        task_id = "s1", 
-        component = "Dataset", 
-        table = {"name" : "s1", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
-    )
-    s2 = Task(
-        task_id = "s2", 
-        component = "Dataset", 
-        table = {"name" : "s2", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
-    )
     t1 = Task(
         task_id = "t1", 
         component = "Dataset", 
         writeOptions = {"writeMode" : "overwrite"}, 
         table = {"name" : "t1", "sourceName" : "deeptanshu.default", "sourceType" : "Table"}
+    )
+    s1 = Task(
+        task_id = "s1", 
+        component = "Dataset", 
+        table = {"name" : "s1", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
+    )
+    s1_1 = Task(
+        task_id = "s1_1", 
+        component = "Dataset", 
+        writeOptions = {"writeMode" : "overwrite"}, 
+        table = {"name" : "s1", "sourceName" : "deeptanshu.default", "sourceType" : "Table"}
+    )
+    s2 = Task(
+        task_id = "s2", 
+        component = "Dataset", 
+        table = {"name" : "s2", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
     )
