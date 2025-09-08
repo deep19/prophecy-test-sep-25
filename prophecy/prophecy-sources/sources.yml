@@ -32,3 +32,43 @@ sources:
       dataType:
         type: "Boolean"
     type: "table"
+  - name: "{{qwer}}"
+    columns: []
+    type: "table"
+  - name: "var('abc')"
+    columns: []
+    type: "table"
+  - name: "{{var('abc')}}"
+    columns: []
+    type: "table"
+- name: "main.default"
+  database: "main"
+  schema: "default"
+  tables:
+  - name: "swee"
+    columns:
+    - name: "customer_id"
+      dataType:
+        type: "Bigint"
+    - name: "name"
+      dataType:
+        type: "String"
+    - name: "email"
+      dataType:
+        type: "String"
+    - name: "city"
+      dataType:
+        type: "String"
+    - name: "status"
+      dataType:
+        type: "String"
+    - name: "valid_from"
+      dataType:
+        type: "Date"
+    - name: "valid_to"
+      dataType:
+        type: "Date"
+    - name: "is_current"
+      dataType:
+        type: "Boolean"
+    type: "table"

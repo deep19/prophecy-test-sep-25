@@ -25,6 +25,12 @@ macro-paths:
 - "macros"
 target-path: "target"
 
+# ==================
+# Variable Configs
+# ==================
+vars:
+  abc: "t1"
+
 # ============
 # Misc
 # ============

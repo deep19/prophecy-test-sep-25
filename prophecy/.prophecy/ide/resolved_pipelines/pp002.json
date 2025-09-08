@@ -7,7 +7,13 @@
     "configuration" : {
       "schema" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "abc",
+          "kind" : {
+            "type" : "string",
+            "value" : "'t1'"
+          }
+        } ]
       }
     },
     "schedule" : {
@@ -27,30 +33,39 @@
     "isTranspiledPipeline" : false
   },
   "processes" : {
-    "jqaNlqFvbALuYDoyb0Y9o$$w3hm2zPkVeLQglZNwK_QC" : {
-      "id" : "jqaNlqFvbALuYDoyb0Y9o$$w3hm2zPkVeLQglZNwK_QC",
+    "2cUhUabdDkcYaceuYf7D5$$dMQ2RAYFlfn9QGC8qHTJU" : {
+      "id" : "2cUhUabdDkcYaceuYf7D5$$dMQ2RAYFlfn9QGC8qHTJU",
       "component" : "Dataset",
       "metadata" : {
-        "label" : "t1",
-        "x" : -540,
-        "y" : -340,
+        "label" : "varabc_1",
+        "x" : -900,
+        "y" : -640,
         "phase" : 0
       },
       "properties" : {
         "table" : {
-          "name" : "t1",
-          "sourceType" : "Source",
+          "name" : "{{var('abc')}}",
+          "sourceType" : "Table",
           "sourceName" : "deeptanshu.default",
-          "alias" : ""
+          "alias" : "",
+          "additionalProperties" : null
+        },
+        "writeOptions" : {
+          "writeMode" : "overwrite"
         }
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "mRSDob22eCFrYWVS3aK7z$$vJopuJZxVvoVULxvzfF9n",
+          "id" : "PU2njrp3K50HGMfINK9Ip$$xaA2kj8sIIQ_EUVfdFKou",
           "slug" : "in"
         } ],
         "outputs" : [ {
-          "id" : "6JcDqYvbXwwgPsdYgu3al$$n69zQNcsLIobrB5_5QpVq",
+          "id" : "D1VwG_PcW7iJPtC4m9ynM$$AmRIEZ9MnpK3s3Fm0sray",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ ]
+          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
