@@ -9,3 +9,16 @@ with DAG(Config = Config, Schedule = Schedule, SensorSchedule = SensorSchedule):
         writeOptions = {"writeMode" : "overwrite"}, 
         table = {"name" : "t1", "sourceType" : "Table", "sourceName" : "deeptanshu.default", "alias" : ""}
     )
+    send_email_notification = Task(
+        task_id = "send_email_notification", 
+        component = "Email", 
+        body = "asdadads", 
+        subject = "Yo!!", 
+        includeData = False, 
+        fileName = "", 
+        to = ["deeprtm3997@gmail.com"], 
+        connection = Connection(kind = "smtp", id = "smtp_1"), 
+        fileFormat = "", 
+        hasTemplate = False
+    )
+    t1.out >> send_email_notification.in0

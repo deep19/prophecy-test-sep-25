@@ -109,8 +109,93 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "41wGs8z_-cSHQMbGgXMD4$$inb9XRAP-gAoZT-1IUtcH" : {
+      "id" : "41wGs8z_-cSHQMbGgXMD4$$inb9XRAP-gAoZT-1IUtcH",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email_notification",
+        "x" : -180,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "body" : "asdadads",
+        "subject" : "Yo!!",
+        "includeData" : false,
+        "fileName" : "",
+        "to" : [ "deeprtm3997@gmail.com" ],
+        "connection" : {
+          "kind" : "smtp",
+          "properties" : {
+            "id" : "smtp_1"
+          },
+          "type" : "connector"
+        },
+        "fileFormat" : "",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FWDpfPZIdTBFDsyb0v2KN$$YkwuRnW61VPwsgIUEX8jI",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "email",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "valid_from",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "valid_to",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "is_current",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "qP2dVQj4xEzl0HIGkkmk6$$n37FvWYSK8Gt1vUT8NRbh",
+    "source" : "woxEqYkis3hZZHjGuiLha",
+    "sourcePort" : "arvrem1d8J-DifZxZj-OO",
+    "target" : "41wGs8z_-cSHQMbGgXMD4$$inb9XRAP-gAoZT-1IUtcH",
+    "targetPort" : "FWDpfPZIdTBFDsyb0v2KN$$YkwuRnW61VPwsgIUEX8jI"
+  } ],
   "component" : "Pipeline"
 }
