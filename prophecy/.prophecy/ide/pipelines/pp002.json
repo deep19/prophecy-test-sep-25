@@ -11,13 +11,13 @@
           "name" : "abc",
           "kind" : {
             "type" : "string",
-            "value" : "'t1'"
+            "value" : "'ogconf'"
           }
         } ]
       }
     },
     "schedule" : {
-      "cron" : "0 0/2 * * * ? *",
+      "cron" : "0 0/5 * * * ? *",
       "timeZone" : "Asia/Kolkata",
       "emailOnSuccess" : false,
       "emailOnFailure" : false,
@@ -38,8 +38,8 @@
       "component" : "Dataset",
       "metadata" : {
         "label" : "t1",
-        "x" : -400,
-        "y" : -200,
+        "x" : -740,
+        "y" : -260,
         "phase" : 0
       },
       "properties" : {
@@ -115,15 +115,15 @@
       "component" : "Email",
       "metadata" : {
         "label" : "send_email_notification",
-        "x" : -180,
-        "y" : -220,
+        "x" : 20,
+        "y" : -420,
         "phase" : 0
       },
       "properties" : {
         "body" : "asdadads",
         "subject" : "Yo!!",
-        "includeData" : false,
-        "fileName" : "",
+        "includeData" : true,
+        "fileName" : "test.csv",
         "to" : [ "deeprtm3997@gmail.com" ],
         "connection" : {
           "kind" : "smtp",
@@ -132,12 +132,61 @@
           },
           "type" : "connector"
         },
-        "fileFormat" : "",
+        "fileFormat" : "csv",
         "hasTemplate" : false
       },
       "ports" : {
         "inputs" : [ {
           "id" : "FWDpfPZIdTBFDsyb0v2KN$$YkwuRnW61VPwsgIUEX8jI",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "tCol",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tColProjectConf",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "4dJr53OIURExUF7Ybt0BU$$a0o3o_TX9zU0Bb3P73Vbg" : {
+      "id" : "4dJr53OIURExUF7Ybt0BU$$a0o3o_TX9zU0Bb3P73Vbg",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "variable_column_selection",
+        "x" : -500,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "{{var('abc')}}"
+          },
+          "alias" : "tCol",
+          "_row_id" : "Y9a8C6rsLA"
+        }, {
+          "expression" : {
+            "expression" : "{{var('projectConfVar')}}"
+          },
+          "alias" : "tColProjectConf",
+          "_row_id" : "T6HGFVAQH2"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "osY8jvIOTUzmFDnC7H9Ey$$njdhfj2DsnUTvbEMWyBW7",
           "schema" : {
             "entityType" : "",
             "providerType" : "databricks",
@@ -185,15 +234,101 @@
           },
           "slug" : "in0"
         } ],
-        "outputs" : [ ],
+        "outputs" : [ {
+          "id" : "r7yzO-fr1IB9voE9SP7cz$$g1B-WuEaPy2L9tilTmVdY",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "tCol",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tColProjectConf",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "SdrG6my4VU8-mxu9jrkqf$$rywQJX6rr8oPD5BBf9ELB" : {
+      "id" : "SdrG6my4VU8-mxu9jrkqf$$rywQJX6rr8oPD5BBf9ELB",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "Limit_1",
+        "x" : -180,
+        "y" : -420,
+        "phase" : 0
+      },
+      "properties" : {
+        "limit" : {
+          "expression" : "5"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oY-1QQfUeTA2P9-SrFEa0$$2jVGZtDwvIHS-HsWMU-z3",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "tCol",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tColProjectConf",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "M2cKOYKZbXbbbNgM3Mb4M$$FKivrlMvgerzq95Z8x_yv",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "tCol",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "tColProjectConf",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
         "isCustomOutputSchema" : false
       }
     }
   },
   "connections" : [ {
-    "id" : "qP2dVQj4xEzl0HIGkkmk6$$n37FvWYSK8Gt1vUT8NRbh",
+    "id" : "YsoeUrY_my9g1tVLUY30t$$vuJ05Tp3hseTQe85K7ydW",
     "source" : "woxEqYkis3hZZHjGuiLha",
     "sourcePort" : "arvrem1d8J-DifZxZj-OO",
+    "target" : "4dJr53OIURExUF7Ybt0BU$$a0o3o_TX9zU0Bb3P73Vbg",
+    "targetPort" : "osY8jvIOTUzmFDnC7H9Ey$$njdhfj2DsnUTvbEMWyBW7"
+  }, {
+    "id" : "3onhpmUk_ImGMJMnq9T4_",
+    "source" : "4dJr53OIURExUF7Ybt0BU$$a0o3o_TX9zU0Bb3P73Vbg",
+    "sourcePort" : "r7yzO-fr1IB9voE9SP7cz$$g1B-WuEaPy2L9tilTmVdY",
+    "target" : "SdrG6my4VU8-mxu9jrkqf$$rywQJX6rr8oPD5BBf9ELB",
+    "targetPort" : "oY-1QQfUeTA2P9-SrFEa0$$2jVGZtDwvIHS-HsWMU-z3"
+  }, {
+    "id" : "HmyCPnGKxCDkz7EW5-uw-$$FqlWahTXBu8kZE0eeM2xf",
+    "source" : "SdrG6my4VU8-mxu9jrkqf$$rywQJX6rr8oPD5BBf9ELB",
+    "sourcePort" : "M2cKOYKZbXbbbNgM3Mb4M$$FKivrlMvgerzq95Z8x_yv",
     "target" : "41wGs8z_-cSHQMbGgXMD4$$inb9XRAP-gAoZT-1IUtcH",
     "targetPort" : "FWDpfPZIdTBFDsyb0v2KN$$YkwuRnW61VPwsgIUEX8jI"
   } ],
