@@ -1,6 +1,6 @@
 name: test_simp_personal
 description: ''
-version: 4.2.1
+version: '57'
 author: deeptanshu@prophecy.io
 language: sql
 buildSystem: ''
