@@ -6,46 +6,41 @@ sources:
   schema: "default"
   tables:
   - name: "t1"
+    description: "Customer location and status information, aiding in tracking customer\
+      \ activity and engagement over time."
     columns:
     - name: "customer_id"
+      description: "Unique identifier for each customer."
       dataType:
         type: "Bigint"
     - name: "name"
+      description: "Full name of the customer."
       dataType:
         type: "String"
     - name: "email"
+      description: "Email address of the customer."
       dataType:
         type: "String"
     - name: "city"
+      description: "City where the customer resides."
       dataType:
         type: "String"
     - name: "status"
+      description: "Current status of the customer's account."
       dataType:
         type: "String"
     - name: "valid_from"
+      description: "Start date from which the record is considered valid."
       dataType:
         type: "Date"
     - name: "valid_to"
+      description: "End date until which the record remains valid."
       dataType:
         type: "Date"
     - name: "is_current"
+      description: "Indicates if the record is currently active."
       dataType:
         type: "Boolean"
-    type: "table"
-  - name: "{{qwer}}"
-    columns: []
-    type: "table"
-  - name: "var('abc')"
-    columns: []
-    type: "table"
-  - name: "{{var('abc')}}"
-    columns: []
-    type: "table"
-  - name: "s1"
-    columns: []
-    type: "table"
-  - name: "s2"
-    columns: []
     type: "table"
 - name: "main.default"
   database: "main"

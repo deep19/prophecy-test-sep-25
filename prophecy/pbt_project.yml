@@ -84,54 +84,10 @@ sqlSources:
         - name: is_current
           dataType:
             type: Boolean
-      description: null
+      description: Customer location and status information, aiding in tracking customer
+        activity and engagement over time.
       author: deeptanshu@prophecy.io
       createdAt: '2025-09-04 09:03:31'
-      tableType: table
-    - name: '{{qwer}}'
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields: []
-      description: null
-      author: deeptanshu@prophecy.io
-      createdAt: '2025-09-04 11:57:00'
-      tableType: table
-    - name: var('abc')
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields: []
-      description: null
-      author: deeptanshu@prophecy.io
-      createdAt: '2025-09-04 12:02:59'
-      tableType: table
-    - name: '{{var(''abc'')}}'
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields: []
-      description: null
-      author: deeptanshu@prophecy.io
-      createdAt: '2025-09-04 12:12:25'
-      tableType: table
-    - name: s1
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields: []
-      description: null
-      author: deeptanshu@prophecy.io
-      createdAt: '2025-09-08 08:22:18'
-      tableType: table
-    - name: s2
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields: []
-      description: null
-      author: deeptanshu@prophecy.io
-      createdAt: '2025-09-08 12:53:09'
       tableType: table
   .prophecy/metadata/sqlsources/main_default:
     name: main.default

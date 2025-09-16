@@ -1,39 +1,11 @@
 Config = {"abc" : "'t1'"}
-Schedule = Schedule(cron = "* 0 2 * * * *", timezone = "GMT", emails = ["email@gmail.com"], enabled = False)
+Schedule = Schedule(cron = "0 0/2 * * * ? *", timezone = "Asia/Kolkata")
 SensorSchedule = SensorSchedule(enabled = False)
 
 with DAG(Config = Config, Schedule = Schedule, SensorSchedule = SensorSchedule):
-    varabc_1 = Task(
-        task_id = "varabc_1", 
-        component = "Dataset", 
-        table = {
-          "name": "{{var('abc')}}", 
-          "sourceType": "Table", 
-          "sourceName": "deeptanshu.default", 
-          "alias": "", 
-          "additionalProperties": None
-        }, 
-        writeOptions = {"writeMode" : "overwrite"}
-    )
     t1 = Task(
         task_id = "t1", 
         component = "Dataset", 
         writeOptions = {"writeMode" : "overwrite"}, 
-        table = {"name" : "t1", "sourceName" : "deeptanshu.default", "sourceType" : "Table"}
-    )
-    s1 = Task(
-        task_id = "s1", 
-        component = "Dataset", 
-        table = {"name" : "s1", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
-    )
-    s1_1 = Task(
-        task_id = "s1_1", 
-        component = "Dataset", 
-        writeOptions = {"writeMode" : "overwrite"}, 
-        table = {"name" : "s1", "sourceName" : "deeptanshu.default", "sourceType" : "Table"}
-    )
-    s2 = Task(
-        task_id = "s2", 
-        component = "Dataset", 
-        table = {"name" : "s2", "sourceType" : "Source", "sourceName" : "deeptanshu.default", "alias" : ""}
+        table = {"name" : "t1", "sourceType" : "Table", "sourceName" : "deeptanshu.default", "alias" : ""}
     )
